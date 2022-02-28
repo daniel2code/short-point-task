@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <script type="text/javascript">
+
+        function moveProgressBar() {
+            const barNode = document.getElementById('bar')
+            const barNode1 = document.getElementById('bar1')
+            const barNode2 = document.getElementById('bar2')
+            const barNode3 = document.getElementById('bar3')
+            const barNode4 = document.getElementById('bar4')
+
+            let allBar = [barNode, barNode1, barNode2, barNode3, barNode4]
+
+            for(let bars of allBar){
+                bars.style.width = "100%";
+                bars.innerText = "100%"
+            }
+
+        }
+
+    </script>
+    <section class="container">
+        <div class="progress-container">
+            <div class="progress-box">
+                <div id="bar" class="progress green">50%</div>
+            </div>
+
+            <div class="progress-box">
+                <div id="bar1" class="progress red">50%</div>
+            </div>
+
+            <div class="progress-box">
+                <div id="bar2" class="progress white">50%</div>
+            </div>
+
+            <div class="progress-box">
+                <div id="bar3" class="progress blue">50%</div>
+            </div>
+
+            <div class="progress-box">
+                <div id="bar4" class="progress yellow">50%</div>
+            </div>
+
+            <button type="button" onclick="moveProgressBar()" class="btn">Finish</button>
+    </section>
+</body>
+
+</html>
